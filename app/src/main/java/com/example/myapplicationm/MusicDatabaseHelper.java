@@ -8,8 +8,8 @@ import android.widget.Toast;
 public class MusicDatabaseHelper extends SQLiteOpenHelper {
     private Context mContext;
 
-    public static final String create_table1 = "create table paper (id integer primary key, name text)";
-    public static final String create_table2 = "create table song (name text, path text, idOfPaper int, primary key (name, idOfPaper))";
+    public static final String create_table1 = "create table paper1 (id integer primary key, name text)";
+    public static final String create_table2 = "create table song1 (name text, path text, idOfPaper int, primary key (name, idOfPaper))";
 
     public MusicDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version){
         super(context, name, factory, version);
